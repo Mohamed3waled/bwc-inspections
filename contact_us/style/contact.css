@@ -1,0 +1,243 @@
+:root {
+    --main-color: #f7dc79;
+    --secondary-color: #f7e6b4;
+    --back-color: #14594b;
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --text-color: #444648;
+    --padding-top: 80px;
+    --padding-bottom: 80px;
+}
+
+/* start variables */
+:root {
+    --main-color: #f7dc79;
+    --secondary-color: #f7e6b4;
+    --back-color: #14594b;
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --text-color: #444648;
+    --padding-top: 80px;
+    --padding-bottom: 80px;
+}
+
+/* fonts */
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a,
+ul,
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--back-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+/* Start Container Media Screen */
+.container {
+    padding: 0 15px;
+    margin: auto;
+}
+
+/* Small Screens */
+@media (min-width : 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* Medium Secreens */
+@media (min-width : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Large Secreen */
+@media (min-width : 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* X-Large Secreen */
+@media (min-width : 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* XX-Large Secreen */
+@media (min-width : 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+/* Start Contact Section */
+/* Start Landing */
+.contact {
+    position: relative;
+    background-image: url(../img/Contact_us1.jpg);
+    background-size: cover;
+    background-position: top;
+    height: calc(100vh - 94.75px);
+    margin-top: 94.75px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 89, 75, 0.8);
+    z-index: -1;
+}
+
+.contact .text_box h1 {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 2.80rem;
+}
+
+.contact .text_box p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* End Landing */
+
+/* End Contact Section */
+/* Start Content */
+.contact_content {
+    padding: 10px 0;
+}
+
+.contact_content h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.80em 0;
+    color: var(--text-color);
+}
+
+
+.box {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+
+.box .card {
+    padding: 20px 10px;
+    border-radius: 5px;
+    background-color: var(--back-color);
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: var(--box-shadow);
+}
+.box .card:hover {
+    transform: translateY(-10px);
+    background-color: var(--text-color);
+}
+.box .card i {
+    font-size: 35px;
+    color: var(--main-color);
+    margin: 10px 5px;
+}
+.box .card p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.box .card a {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+/* End Content */
+/* start Footer */
+footer {
+  background-image: url(../img/back_footer.png);
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  background-color: #f2f5f7;
+  text-align: center;
+}
+
+.footer_content ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.footer_content ul li img {
+  max-width: 150px;
+}
+
+
+.footer_content span {
+  font-weight: bold;
+  width: fit-content;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin: 15px auto;
+}
+
+.footer_content strong {
+  color: #14594b;
+  font-size: 0.800rem;
+}
+
+@media (max-width: 767px) {
+  .footer_content ul {
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+/* End Footer */

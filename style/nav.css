@@ -187,7 +187,7 @@ nav ul {
     transition: all .2s;
   }
 
-  header .container a {
+  header .container  a {
     color: var(--back-color);
     transition: all .3s;
   }

@@ -93,23 +93,6 @@ img {
 
 /* End Container Media Screen */
 /* Start landing */
-.Whatsapp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  left: 20px;
-  bottom: 15px;
-  color: #25d366;
-  background-color: white;
-  border-radius: 50%;
-  box-shadow: var(--box-shadow);
-  font-size: 1.6rem;
-  border: 1px solid #25d366;
-}
 
 .Landing {
   margin-top: 94px;
